@@ -1,0 +1,43 @@
+#revenue-list li {
+    padding: 10px 0;
+}
+
+#revenue-list li:not(:last-child) {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.buy-widget {
+    padding: 10px;
+    border: 1px solid #dee1e2;
+    border-radius: 3px;
+    margin: 10px 0;
+    user-select: none;
+    outline: none;
+}
+
+ul#revenue-list .text {
+    font-size: 13px;
+}
+
+.hashrate-panel {
+    background-color: #9ad1ed;
+    color: #fff;
+}
+
+.purchase-toggle {
+    font-size: 19px;
+}
+
+.type-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.type-container > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.type-container .panel {
+    height: 100%;
+}

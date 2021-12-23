@@ -1,0 +1,10 @@
+RewriteEngine on
+
+RewriteRule ^(register|logout|settings|admin|withdraw|buy|history)/?$ index.php?page=$1 [L]
+RewriteRule ^(language)/(.*)/?$ index.php?page=$1&lang=$2 [L]
+RewriteRule ^admin/(users|withdraw-requests|purchases|asettings)/?$ index.php?page=$1 [L]
+RewriteRule ^admin/(users|withdraw-requests)/(delete|edit)/([0-9]+)/?$ index.php?page=$1&b=$2&id=$3 [L]
+RewriteRule ^(transaction)/([A-Za-z0-9]+)/?$ index.php?page=$1&txn_id=$2 [L]
+RewriteRule ^(history)/([A-Za-z0-9]+)/([0-9]+)/?$ index.php?page=$1&panel=$2&pagination=$3 [L]
+RewriteRule ^admin/(users)/page/([0-9]+)/?$ index.php?page=$1&pagination=$2 [L]
+RewriteRule ^admin/(user-add-package)/([0-9]+)/?$ index.php?page=$1&b=$1&user_id=$2 [L]
